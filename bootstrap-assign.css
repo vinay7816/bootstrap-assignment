@@ -1,0 +1,152 @@
+*{
+    overflow-x: hidden;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #5C2D91;
+}
+
+.hero-content h1 span {
+    color: #F79E8A;
+}
+.save{
+    width: 120px !important;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    color: #777;
+}
+
+.hero-buttons .btn {
+    margin-right: 10px;
+}
+
+.hero-image {
+    max-width: 90%;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.nav-link {
+    color: #5C2D91 !important;
+}
+
+.features-section-extended {
+    background-color: #f8f9fa;
+}
+
+.blob-container {
+    position: relative;
+    width: 60%; /* Removed !important */
+    padding-top: 80%; 
+    background: linear-gradient(135deg, #6200ea, #3d5afe);
+    margin: 0 auto;
+    overflow: hidden;
+    animation: blob-container_animate 10s infinite;
+}
+
+@keyframes blob-container_animate {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+.blob-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    height: auto;
+    z-index: 2;
+}
+.products-section .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.products-section .card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonials-section .testimonial-text {
+    font-style: italic;
+    color: #666;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+}
+.footer {
+    background: linear-gradient(to right, #7F00FF, #E100FF);
+    color: white;
+    padding: 40px 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.contact-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-section {
+    padding: 3rem 1rem;
+}
+
+
+@media (max-width: 750.98px) {
+  
+    .hero-content {
+        order: 2;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-image img {
+        width: 360px !important;
+        height: auto;
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 500.98px) {
+
+    .hero-section {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+}
+
+
+
